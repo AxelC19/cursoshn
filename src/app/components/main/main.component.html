@@ -1,0 +1,299 @@
+<app-banner></app-banner>
+<br>
+<h2 class="text-center titulo animate__animated animate__backInDown" style="font-size: 2rem; color:aquamarine; text-transform: uppercase;" >Selecciona tu Aprendizaje</h2> 
+
+<hr>
+<div class="row  justify-content-center text-center cursor animate__animated animate__fadeIn">
+    <div class="col-sm">
+       <div *ngIf="mostrar" class="">
+        <div  class="container-sm mt-3">
+          <div class="row">
+             <div class="col">
+                 <div class="card text-dark">
+                     <div class="card-header">
+                         <h4 class="">Acerca del curso</h4>
+                         <p >
+                          En este curso podrá aprender más sobre lo que es los tics, que son, cuáles son sus inicios también podremos ver más a fondo cuáles son sus ventajas y sus desventajas y las principales características con el fin de que el cursante aprenda sobre estas tecnologías o amplie sus conocimientos, este constara de 2 horas en una modalidad cursar sin tiempo definido, cada usuario lo hará en el tiempo que considere, al final de cada curso hará una evaluación para finalizar el mismo.  
+                         </p>
+                     </div>
+                       <div class="card-body  gap-2 text-start">
+                            <h5>Instructor: <span class="text-muted">Ingeniero Hugo Colindres</span></h5>
+                            <h5>Duración  :   <span class="text-muted">3 horas</span></h5>
+                            <h5>Requisitos: <span class="text-muted"><br>Conocimientos Básicos de navegación web</span></h5>
+                       </div>
+                     <hr>
+                     <button class="btn  btn-outline-info text-dark" (click)="curso1()" >Comenzar</button>
+                     <button class="btn  btn-outline-info text-dark mt-2"(click)=" onVolverIncio()" >Volver</button>
+                 </div>
+             </div>
+          </div>
+         <!-- <app-login></app-login>  -->
+     </div>
+  </div>
+      <div *ngIf="ocultar" class="card text-bg-primary mb-3" >
+        <img style="height:20rem ;" 
+        src="../../../assets/hugo.jpeg" class="card-img-top">
+        <hr>
+        <div class="card-body" >                
+          <p class="card-text" >Introdución a las Tics</p>
+          <button class="btn  btn-outline-light" (click)="mostrarTarjeta()" (click)="onMostrarInformacion()">Información</button>
+        </div>
+      </div>  
+      </div>
+      
+
+    <div class="col">
+      <div *ngIf="mostrar" class="">
+        <div  class="container-sm mt-3">
+          <div class="row">
+             <div class="col">
+                 <div class="card text-dark">
+                     <div class="card-header">
+                         <h4 class="">Acerca del curso</h4>
+                         <p >
+                          ¡Bienvenidos!
+                          En este pequeño curso les estaremos impartiendo los principales conocimientos básicos relacionados a la seguridad informática personal, que les permitirá adquirir una visión general y amplia de la seguridad informática y que al adquirir estos conocimientos en un futuro puedan ponerlos en práctica ya sea que se dediquen a esta área o no, este curso constara de 11 videos, es totalmente gratis para todo aquel que quiera reforzar sus conocimientos en cuanto a seguridad. 
+
+                          ¡Te deseamos éxito!
+                                                   </p>
+                     </div>
+                       <div class="card-body  gap-2 text-start">
+                            <h5>Instructor: <span class="text-muted">Ingeniera Nubia Azucena López</span></h5>
+                            <h5>Duración  :   <span class="text-muted">3 horas</span></h5>
+                            <h5>Requisitos: <span class="text-muted"><br>Es acto para todo público</span></h5>
+                       </div>
+                     <hr>
+                     <button class="btn  btn-outline-info text-dark" (click)="curso2()"  >Comenzar</button>
+                     <button class="btn  btn-outline-info text-dark mt-2"(click)=" onVolverIncio()" >Volver</button>
+                 </div>
+             </div>
+          </div>
+         <!-- <app-login></app-login>  -->
+     </div>
+  </div>
+        <div *ngIf="ocultar" class="card text-bg-primary mb-3" >
+            <img style="height:20rem ;" 
+            src="../../../assets/nubia.jpeg" class="card-img-top">
+            <hr>
+            <div class="card-body">                
+              <p class="card-text"  >Seguridad Informática Personal</p>
+              <button class="btn  btn-outline-light" (click)="mostrarTarjeta()" (click)="onMostrarInformacion()">Información</button>
+            </div>
+          </div>          
+    </div> 
+
+          <!--fin col-->
+     
+
+</div>
+<br>
+
+<div class="row   justify-content-center text-center cursor animate__animated animate__fadeIn">
+  <div class="col-sm">
+    <div *ngIf="mostrar" class="">
+      <div  class="container-sm mt-3">
+        <div class="row">
+           <div class="col">
+               <div class="card text-dark">
+                   <div class="card-header">
+                       <h4 class="">Acerca del curso</h4>
+                       <p >
+                        Te damos la bienvenida al curso Negocio electrónico Global, Online desarrollado. En el transcurso de estas cuatro semanas recorrerás temas fascinantes y actuales que te permitirán no solo comprender los diferentes aspectos que hacen al desarrollo de la estrategia digital del negocio, sino comenzar a crear una empresa que se integre a los negocios online.                       </p>
+                   </div>
+                     <div class="card-body  gap-2 text-start">
+                          <h5>Instructor: <span class="text-muted">Ing. Nayely Ibeth Vásquez López </span></h5>
+                          <h5>Duración  :   <span class="text-muted">3 horas</span></h5>
+                          <h5>Requisitos: <span class="text-muted"> <br>• Es Acto para todo Publico </span></h5>
+                     </div>
+                   <hr>
+                   <button class="btn  btn-outline-info text-dark" (click)="curso3()" >Comenzar</button>
+                   <button class="btn  btn-outline-info text-dark mt-2"(click)=" onVolverIncio()" >Volver</button>
+               </div>
+           </div>
+        </div>
+       <!-- <app-login></app-login>  -->
+   </div>
+</div>
+    <div *ngIf="ocultar" class="card text-bg-primary mb-3" >
+        <img  src="../../../assets/ibeth.jpeg" class="card-img-top  somb" style="height:20rem ;"  alt="...">
+        <hr>
+        <div class="card-body">
+          <p class="card-text" >Negocio electrónico global</p>
+          <div class="d-grid gap-2 d-md-block">            
+            <button class="btn   btn-outline-light" type="button" (click)="mostrarTarjeta()" (click)="onMostrarInformacion()">Información </button>                      
+          </div>
+        </div>
+      </div>          
+</div> 
+    <!--fin col-->
+    <div class="col ">
+      <div *ngIf="mostrar" class="">
+        <div  class="container-sm mt-3">
+          <div class="row">
+             <div class="col">
+                 <div class="card text-dark">
+                     <div class="card-header">
+                         <h4 class="">Acerca del curso</h4>
+                         <p >
+                          En este curso podrás aprender más sobre el hacking ético, cuáles son sus inicios, los beneficios que conlleva aplicarlo en las empresas u organización, sus creadores, este curso ha sido creado con el fin de que el cursante pueda adquirir conocimientos nuevos acerca de este tema o si bien ampliar sus conocimientos, constara de un tiempo de duración de 4 horas y se podrá realizar en el momento que lo desees conveniente, al final del curso habrá una evaluación donde se pondrá a prueba todos los conocimientos aquí mostrados.                          </p>
+                     </div>
+                       <div class="card-body  gap-2 text-start">
+                            <h5>Instructor: <span class="text-muted">Ingeniero Edwan Fabricio Santos </span></h5>
+                            <h5>Duración  :   <span class="text-muted">4 horas</span></h5>
+                            <h5>Requisitos: <br><span class="text-muted">•Interés por aprender acerca del tema                             
+                              </span> <span class="text-muted"> <br>•Este curso es para todo público, aunque preferiblemente con conocimientos básicos en informática</span></h5>
+                       </div>
+                     <hr>
+                     <button class="btn  btn-outline-info text-dark" (click)="curso4()" >Comenzar</button>
+                     <button class="btn  btn-outline-info text-dark mt-2"(click)=" onVolverIncio()" >Volver</button>
+                 </div>
+             </div>
+          </div>
+         <!-- <app-login></app-login>  -->
+     </div>
+  </div>
+        <div *ngIf="ocultar" class="card text-bg-primary mb-3"  >
+            <img src="../../../assets/fabricio.jpeg" class="card-img-top" style="height:20rem ;" alt="...">
+            <hr>
+            <div class="card-body">
+              <p class="card-text" >Hacking Ético</p>                          
+             <div class="d-grid gap-2 d-md-block">
+                  <button class="btn   btn-outline-light" type="button" (click)="mostrarTarjeta()" (click)="onMostrarInformacion()">Información </button>                      
+             </div>         
+            </div>
+          </div>          
+    </div>
+</div>
+
+
+<!--cursos 2-->
+<div class="row  row  justify-content-center text-center cursor animate__animated animate__fadeIn">
+  <div class="col-sm">
+    <div *ngIf="mostrar" class="">
+      <div  class="container-sm mt-3">
+        <div class="row">
+           <div class="col">
+               <div class="card text-dark">
+                   <div class="card-header">
+                       <h4 class="">Acerca del curso</h4>
+                       <p >
+                        El objetivo de este curso básico de Word es que los participantes adquieran todos los conocimientos para crear, editar, dar formato, editar documentos, insertar objetos e imprimir dichos documentos, así como el manejo de herramientas intermedias de control y secciones en Word.
+                        La aplicación Microsoft Word es el procesador de textos de uso más extendido, siendo el tratamiento de textos una de las aplicaciones más usuales de los equipos informáticos, tanto en el ámbito profesional como personal.
+                                               </p>
+                   </div>
+                     <div class="card-body  gap-2 text-start">
+                          <h5>Instructor: <span class="text-muted">Ing. Alex Lagos</span></h5>
+                          <h5>Duración  :   <span class="text-muted">4 horas</span></h5>
+                          <h5>Requisitos: <span class="text-muted"><br>•	Se recomienda que los alumnos del curso posean conocimientos previos en Informática Básica.</span></h5>
+                     </div>
+                   <hr>
+                   <button class="btn  btn-outline-info text-dark" (click)="curso5()"  >Comenzar</button>
+                   <button class="btn  btn-outline-info text-dark mt-2"(click)=" onVolverIncio()" >Volver</button>
+               </div>
+           </div>
+        </div>
+       <!-- <app-login></app-login>  -->
+   </div>
+</div>
+      <div *ngIf="ocultar" class="card text-bg-primary mb-3"  >
+          <img src="../../../assets/alex.jpeg" class="card-img-top" alt="..." style="height:20rem ;">
+          <hr>
+          <div class="card-body">
+            <p class="card-text">Word Básico</p>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn   btn-outline-light" type="button" (click)="mostrarTarjeta()" (click)="onMostrarInformacion()">Información </button>                      
+         </div>         
+          </div>
+        </div>          
+  </div> 
+      <!--fin col-->
+      <div class="col">
+        <div *ngIf="mostrar" class="">
+          <div  class="container-sm mt-3">
+            <div class="row">
+               <div class="col">
+                   <div class="card text-dark">
+                       <div class="card-header">
+                           <h4 class="">Acerca del curso</h4>
+                           <p >
+                            El objetivo de este curso básico de Crear y modificar documentos de Word, Excel y PowerPoint sin ayuda de nadie. Que los estudiantes puedan Combinar el uso del paquete Office para trabajar de manera más eficiente y Al finalizar el curso el alumno podrá trabajar sin problema en administración, secretaría y gestión.                           </p>
+                       </div>
+                         <div class="card-body  gap-2 text-start">
+                              <h5>Instructor: <span class="text-muted">Ingeniero Boris Aparicio</span></h5>
+                              <h5>Duración  :   <span class="text-muted">8 horas</span></h5>
+                              <h5>Requisitos: <span class="text-muted"> <br>•	El alumno posea conocimientos previos en Informática Básica.
+                                <br>•	El alumno posea una computadora.
+                                <br>•	El alumno tenga instalado la suite de Office (Word, PowerPoint, Excel)
+                                <br>•	Que el alumno tenga conexión a internet 
+                                </span></h5>
+                         </div>
+                       <hr>
+                       <button class="btn  btn-outline-info text-dark" (click)="curso6()">Comenzar</button>
+                       <button class="btn  btn-outline-info text-dark mt-2"(click)=" onVolverIncio()" >Volver</button>
+                   </div>
+               </div>
+            </div>
+           <!-- <app-login></app-login>  -->
+       </div>
+    </div>
+          <div *ngIf="ocultar" class="card text-bg-primary mb-3"  >
+              <img src="../../../assets/boris.jpeg" style="height:20rem ;" class="card-img-top" alt="...">
+              <hr>
+              <div class="card-body">
+                <p class="card-text" >Curso básico de office</p>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn   btn-outline-light" type="button" (click)="mostrarTarjeta()" (click)="onMostrarInformacion()">Información </button>                      
+             </div>         
+              </div>
+            </div>          
+      </div> 
+
+</div>
+
+<div class="row  row  justify-content-center text-center cursor animate__animated animate__fadeIn">  
+
+  <div class="col col-sm-6  ">
+    <div *ngIf="mostrar" class="">
+      <div  class="container-sm mt-3">
+        <div class="row">
+           <div class="col">
+               <div class="card text-dark">
+                   <div class="card-header">
+                       <h4 class="">Acerca del curso</h4>
+                       <p >
+                        Aprenderás los conceptos básicos de telecomunicaciones, Internet y conectividad como base para comprender la evolución de Internet de las Cosas,
+                         a dimensionar el impacto social y económico de un mundo interconectado que crece de manera exponencial.
+                         A identificar las distintas tecnologías de comunicaciones aplicables a las soluciones de Internet de las Cosas
+                                               </p>
+                   </div>
+                     <div class="card-body  gap-2 text-start">
+                          <h5>Instructor: <span class="text-muted">Ing. Edeivy Paola Mercado</span></h5>
+                          <h5>Duración  :   <span class="text-muted">5 horas</span></h5>
+                          <h5>Requisitos: <span class="text-muted"> <br>•Aunque no hay requisitos para seguir este curso, se recomienda un dominio básico de ordenador a nivel de usuario.<br>
+                            •	Se requiere conexión a Internet para poder visualizar el contenido, así como un teléfono móvil para experimentar con el bloque de IFTTT.
+                            </span></h5>
+                     </div>
+                   <hr>
+                   <button class="btn  btn-outline-info text-dark" (click)="curso6()">Comenzar</button>
+                   <button class="btn  btn-outline-info text-dark mt-2"(click)=" onVolverIncio()" >Volver</button>
+               </div>
+           </div>
+        </div>
+       <!-- <app-login></app-login>  -->
+   </div>
+</div>
+      <div *ngIf="ocultar" class="card text-bg-primary mb-3"  >
+          <img src="../../../assets/paola.jpeg" style="height:20rem ;" class="card-img-top" alt="...">
+          <hr>
+          <div class="card-body">
+            <p class="card-text" >El internet de las cosas</p>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn   btn-outline-light" type="button" (click)="mostrarTarjeta()" (click)="onMostrarInformacion()">Información </button>                      
+         </div>         
+          </div>
+        </div>          
+  </div> 
+  
+</div>
+
+

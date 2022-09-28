@@ -1,0 +1,80 @@
+<div class="container-sm  animate__animated animate__fadeInUp">
+    <div class="row">
+        <div class="col">          
+           
+           <div class="card text-center">
+                <div class="card-header">
+                    <h2 class=" mt-3" style="color:darkgrey; text-transform: uppercase;">Nuevo Alumno
+                        <div *ngIf="cargar" class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                    </h2> 
+                </div>
+               <div class="card-body">
+                  <form [formGroup]="crearAl" (ngSubmit)="agregarAlumnos()">
+                    <span *ngIf="Enviado && crearAl.invalid" class="badge bg-danger mt-2">todos los campos son requeridos</span>
+                       <div class="row ">
+                           <div class="col-12 mt-3">
+                                  <input type="text" class="form-control" 
+                                  placeholder="Nombre de pila"
+                                  formControlName="nombre">                                  
+                           </div>
+                           <div class="col-12 mt-3">
+                            <input type="text" class="form-control" 
+                            placeholder="segundo Nombre"
+                            formControlName="segundonombre">                                  
+                            </div>
+                            <div class="col mt-2">
+                                <input type="text" class="form-control" placeholder="Apellido"
+                                formControlName="apellido">
+                               </div>                                                      
+                           <div class="col mt-2">
+                            <input type="text" class="form-control" placeholder="Segundo Apellido"
+                            formControlName="segundoapellido">
+                           </div>
+                       </div>
+                       <div class="col mt-3">
+                        <input type="number" class="form-control" 
+                        placeholder="identidad"
+                        formControlName="identidad">                                  
+                      </div>
+
+                       <div class="row mt-3">
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="edad"
+                            formControlName="edad"
+                             
+                            >
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="sexo m=masculino f=femenino o=otros"
+                            formControlName="sexo" 
+                            minlength="1" maxlength="1"
+                            >
+                        </div>                                                  
+                       </div>
+                     
+                       <div class="row mt-3">
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="correo@"
+                            formControlName="correo">
+                        </div>                                                                        
+                       </div>
+                       <select class="form-control text-center mt-3" aria-label="Disabled select example" disabled>
+                        <option formControlName="curso" selected>Curso básico de office</option>
+                        
+                      </select>
+                       
+                       <div class="mt-3">
+                          <button type="submit" class="btn btn-lg btn-info" [disabled]="crearAl.invalid" >Matricular</button>
+                          
+                       </div>
+                  </form>                
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+
+

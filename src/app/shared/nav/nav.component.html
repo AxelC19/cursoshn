@@ -1,0 +1,43 @@
+<nav class="navbar navbar-dark bg-secondary bg-gradient bg-opacity-50 fixed-top">        
+    <div class="container-fluid ">               
+      <!-- <a class="navbar-brand" href="#">Geografia</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">        
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <p class="navbar-brand">CursosHN</p>
+      <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3   ">
+            <li class="nav-item list-group-item sombra">
+              <a class="nav-link active text-center "  aria-current="page" (click)="onMain()">Inicio</a>
+            </li>
+            <li class="nav-item sombra" >
+                <a class="nav-link active text-center  " aria-current="page"(click)="onMaster()"> Instructor</a>
+              </li>
+              <li class="nav-item sombra" >
+                <a class="nav-link active text-center " aria-current="page"(click)="onAdmin()">Admin</a>
+              </li>
+              
+              <li class="nav-item dropdown text-center ">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                  Iniciar Sesión 
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark sombra">
+                  <li><a class="dropdown-item" (click)="onLogin()" >ALUMNO</a></li>
+                  <li><a class="dropdown-item" (click)="onLogin()">INSTRUCTOR</a></li>
+                  <li><a class="dropdown-item" (click)="onLogin()">ADMINISTRACIÓN</a></li>
+                  <li><a class="dropdown-item" (click)="onInlogin()">CERRAR SESION</a></li>
+                </ul>
+              </li>
+              
+            <br>            
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </nav>

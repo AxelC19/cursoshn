@@ -1,0 +1,40 @@
+<br>
+<br>
+<br>
+
+<h2 class="text-center mt-3 text-info">Registro de usuario</h2>
+<div class="row justify-content-center mt-3 text-info">
+     <div class="col-7">
+        <form (ngSubmit)="registrar()" [formGroup]="formReg" >
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control" formControlName="email" maxlength="20">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" formControlName="password" maxlength="15">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Repetir Password</label>
+                <input type="password" class="form-control" formControlName="Repetirpassword" maxlength="15">
+            </div>
+            <div  class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary"  >registrar</button>
+                <button   class="btn btn-primary" >login</button>
+            </div>
+            
+            
+            <br>
+           
+            
+        </form>
+        
+     </div>
+</div>
+
+
+
+
+
+
+

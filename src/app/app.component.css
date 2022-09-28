@@ -1,0 +1,8 @@
+.ima{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) ),  url("../assets/ban2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: cover;
+    height: 90vh;
+    
+}

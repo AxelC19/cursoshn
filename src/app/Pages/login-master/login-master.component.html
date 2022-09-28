@@ -1,0 +1,186 @@
+<br>
+<br>
+<br>
+
+<div class="conatiner">
+      <div class="row text-center" *ngFor=" let campo of campos">
+           <div class="col-12">
+            <h2 style="color:aquamarine">{{campo.instructor}}</h2>
+           </div>
+      </div>
+      <div *ngIf="campos.length > 0" class="row mt-2 justify-content-center border border-3" style="color:blanchedalmond">
+        <h4 *ngIf="mostrar" style="color:red ;"> NO hay datos</h4>
+           <div *ngFor=" let campo of campos"  class="col mt-3">            
+            <div class="d-flex position-relative mt-3">                
+                <img src="../../../assets/userAlumno.png" class="flex-shrink-0 me-5" style="height: 7rem ;" alt="...">
+                <div>                  
+                  <h5 class="mt-0" >Nombre: <span class="text-muted">{{campo.nombre}},{{campo.Segundonombre}}</span></h5>                                                                    
+                  <h5 class="mt-0" >Apellido: <span class="text-muted">{{campo.apellido}},{{campo.Segundoapellido}}</span></h5>                  
+                  <h5 class="mt-0" >ID:       <span class="text-muted" >{{campo.identidad }}</span></h5>
+                  <h5 class="mt-0" >Email:    <span class="text-muted">{{campo.correo }}</span></h5>                  
+                  <p class="text-info">Certificar</p>
+                  <hr>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+              </div>
+           </div>        
+   </div>
+   <!-- inicio tabla -->
+   <div class="row text-center" *ngFor=" let campo of campos2">
+    <div class="col-12">
+     <h2 style="color:aquamarine">{{campo.instructor}}</h2>
+    </div>
+</div>
+<div *ngIf="campos2.length > 0" class="row mt-2 justify-content-center border border-3" style="color:blanchedalmond">
+ <h4 *ngIf="mostrar" style="color:red ;"> NO hay datos</h4>
+    <div *ngFor=" let campo of campos2"  class="col mt-3">            
+     <div class="d-flex position-relative mt-3">                
+         <img src="../../../assets/userAlumno.png" class="flex-shrink-0 me-5" style="height: 7rem ;" alt="...">
+         <div>                  
+           <h5 class="mt-0" >Nombre: <span class="text-muted">{{campo.nombre}},{{campo.Segundonombre}}</span></h5>                                                                    
+           <h5 class="mt-0" >Apellido: <span class="text-muted">{{campo.apellido}},{{campo.Segundoapellido}}</span></h5>                  
+           <h5 class="mt-0" >ID:       <span class="text-muted" >{{campo.identidad }}</span></h5>
+           <h5 class="mt-0" >Email:    <span class="text-muted">{{campo.correo }}</span></h5>                  
+           <p class="text-info">Certificar</p>
+           <hr>
+           <br>
+           <br>
+           <br>
+         </div>
+       </div>
+    </div>        
+</div>
+<!-- inicio fin -->
+<!-- inicio tabla -->
+<div class="row text-center" *ngFor=" let campo of campos3">
+  <div class="col-12">
+   <h2 style="color:aquamarine">{{campo.instructor}}</h2>
+  </div>
+</div>
+<div *ngIf="campos3.length > 0" class="row mt-2 justify-content-center border border-3" style="color:blanchedalmond">
+<h4 *ngIf="mostrar" style="color:red ;"> NO hay datos</h4>
+  <div *ngFor=" let campo of campos3"  class="col mt-3">            
+   <div class="d-flex position-relative mt-3">                
+       <img src="../../../assets/userAlumno.png" class="flex-shrink-0 me-5" style="height: 7rem ;" alt="...">
+       <div>                  
+         <h5 class="mt-0" >Nombre: <span class="text-muted">{{campo.nombre}},{{campo.Segundonombre}}</span></h5>                                                                    
+         <h5 class="mt-0" >Apellido: <span class="text-muted">{{campo.apellido}},{{campo.Segundoapellido}}</span></h5>                  
+         <h5 class="mt-0" >ID:       <span class="text-muted" >{{campo.identidad }}</span></h5>
+         <h5 class="mt-0" >Email:    <span class="text-muted">{{campo.correo }}</span></h5>                  
+         <p class="text-info">Certificar</p>
+         <hr>
+         <br>
+         <br>
+         <br>
+       </div>
+     </div>
+  </div>        
+</div><!-- inicio fin -->
+<!-- inicio tabla -->
+<div class="row text-center" *ngFor=" let campo of campos4">
+  <div class="col-12">
+   <h2 style="color:aquamarine">{{campo.instructor}}</h2>
+  </div>
+</div>
+<div *ngIf="campos4.length > 0" class="row mt-2 justify-content-center border border-3" style="color:blanchedalmond">
+<h4 *ngIf="mostrar" style="color:red ;"> NO hay datos</h4>
+  <div *ngFor=" let campo of campos4"  class="col mt-3">            
+   <div class="d-flex position-relative mt-3">                
+       <img src="../../../assets/userAlumno.png" class="flex-shrink-0 me-5" style="height: 7rem ;" alt="...">
+       <div>                  
+         <h5 class="mt-0" >Nombre: <span class="text-muted">{{campo.nombre}},{{campo.Segundonombre}}</span></h5>                                                                    
+         <h5 class="mt-0" >Apellido: <span class="text-muted">{{campo.apellido}},{{campo.Segundoapellido}}</span></h5>                  
+         <h5 class="mt-0" >ID:       <span class="text-muted" >{{campo.identidad }}</span></h5>
+         <h5 class="mt-0" >Email:    <span class="text-muted">{{campo.correo }}</span></h5>                  
+         <p class="text-info">Certificar</p>
+         <hr>
+         <br>
+         <br>
+         <br>
+       </div>
+     </div>
+  </div>        
+</div><!-- inicio fin -->
+<!-- inicio tabla -->
+<div class="row text-center" *ngFor=" let campo of campos5">
+  <div class="col-12">
+   <h2 style="color:aquamarine">{{campo.instructor}}</h2>
+  </div>
+</div>
+<div *ngIf="campos5.length > 0" class="row mt-2 justify-content-center border border-3" style="color:blanchedalmond">
+<h4 *ngIf="mostrar" style="color:red ;"> NO hay datos</h4>
+  <div *ngFor=" let campo of campos5"  class="col mt-3">            
+   <div class="d-flex position-relative mt-3">                
+       <img src="../../../assets/userAlumno.png" class="flex-shrink-0 me-5" style="height: 7rem ;" alt="...">
+       <div>                  
+         <h5 class="mt-0" >Nombre: <span class="text-muted">{{campo.nombre}},{{campo.Segundonombre}}</span></h5>                                                                    
+         <h5 class="mt-0" >Apellido: <span class="text-muted">{{campo.apellido}},{{campo.Segundoapellido}}</span></h5>                  
+         <h5 class="mt-0" >ID:       <span class="text-muted" >{{campo.identidad }}</span></h5>
+         <h5 class="mt-0" >Email:    <span class="text-muted">{{campo.correo }}</span></h5>                  
+         <p class="text-info">Certificar</p>
+         <hr>
+         <br>
+         <br>
+         <br>
+       </div>
+     </div>
+  </div>        
+</div>
+<!-- inicio fin -->
+<!-- inicio tabla -->
+<div class="row text-center" *ngFor=" let campo of campos6">
+  <div class="col-12">
+   <h2 style="color:aquamarine">{{campo.instructor}}</h2>
+  </div>
+</div>
+<div *ngIf="campos6.length > 0" class="row mt-2 justify-content-center border border-3" style="color:blanchedalmond">
+<h4 *ngIf="mostrar" style="color:red ;"> NO hay datos</h4>
+  <div *ngFor=" let campo of campos6"  class="col mt-3">            
+   <div class="d-flex position-relative mt-3">                
+       <img src="../../../assets/userAlumno.png" class="flex-shrink-0 me-5" style="height: 7rem ;" alt="...">
+       <div>                  
+         <h5 class="mt-0" >Nombre: <span class="text-muted">{{campo.nombre}},{{campo.Segundonombre}}</span></h5>                                                                    
+         <h5 class="mt-0" >Apellido: <span class="text-muted">{{campo.apellido}},{{campo.Segundoapellido}}</span></h5>                  
+         <h5 class="mt-0" >ID:       <span class="text-muted" >{{campo.identidad }}</span></h5>
+         <h5 class="mt-0" >Email:    <span class="text-muted">{{campo.correo }}</span></h5>                  
+         <p class="text-info">Certificar</p>
+         <hr>
+         <br>
+         <br>
+         <br>
+       </div>
+     </div>
+  </div>        
+</div><!-- inicio fin -->
+<!-- inicio tabla -->
+<div class="row text-center" *ngFor=" let campo of campos7">
+  <div class="col-12">
+   <h2 style="color:aquamarine">{{campo.instructor}}</h2>
+  </div>
+</div>
+<div *ngIf="campos7.length > 0" class="row mt-2 justify-content-center border border-3" style="color:blanchedalmond">
+<h4 *ngIf="mostrar" style="color:red ;"> NO hay datos</h4>
+  <div *ngFor=" let campo of campos7"  class="col mt-3">            
+   <div class="d-flex position-relative mt-3">                
+       <img src="../../../assets/userAlumno.png" class="flex-shrink-0 me-5" style="height: 7rem ;" alt="...">
+       <div>                  
+         <h5 class="mt-0" >Nombre: <span class="text-muted">{{campo.nombre}},{{campo.Segundonombre}}</span></h5>                                                                    
+         <h5 class="mt-0" >Apellido: <span class="text-muted">{{campo.apellido}},{{campo.Segundoapellido}}</span></h5>                  
+         <h5 class="mt-0" >ID:       <span class="text-muted" >{{campo.identidad }}</span></h5>
+         <h5 class="mt-0" >Email:    <span class="text-muted">{{campo.correo }}</span></h5>                  
+         <p class="text-info">Certificar</p>
+         <hr>
+         <br>
+         <br>
+         <br>
+       </div>
+     </div>
+  </div>        
+</div>
+<!-- fin de la tabla -->
+</div>
+
+
+

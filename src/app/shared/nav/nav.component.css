@@ -1,0 +1,7 @@
+.sombra  :hover{
+      background-color: brown;
+}
+
+li{
+      cursor: pointer;
+}
