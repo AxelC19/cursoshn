@@ -28,54 +28,144 @@
     
 </div>
 <!-- modal fin -->
+
 <br>
-<h2 class="text-center" style="color: aquamarine;">Desarrollo</h2>
+<h4 class="text-right mt-3 text-info">  Introducion a las tics  <span> </span><span class="vr text-info" style="padding-left: 3px ;"> </span> <span class="text-muted"> Ing. Hugo Colindres</span></h4>
+<hr style="color: aquamarine;">
+
+<h3 class="text-center" style="color: aquamarine;">Introdución</h3>
+         <br>
+         <p style="color: aquamarine;">
+          En este curso podrá aprender más sobre lo que es los tics, que son, cuáles son sus inicios también podremos ver más a fondo cuáles son sus ventajas y sus desventajas y las principales características con el fin de que el cursante aprenda sobre estas tecnologías o amplie sus conocimientos, este constara de 2 horas en una modalidad cursar sin tiempo definido, cada usuario lo hará en el tiempo que considere, al final de cada curso hará una evaluación para finalizar el mismo.
+         </p>
+         
+       
 <br>
 <hr>
 <div class="row  text-center">
         <div class=" col-sm-12  align-self-center">          
                 
-                <div *ngIf="mostrar" class="ratio ratio-16x9">
-                    <h3 class="text-center">video1</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i-oYrcNtc2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div *ngIf="intros" class="ratio ratio-16x9">
+                    <h3 class="text-center">intro</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-cqbbOZrJoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>                  
+                  <div *ngIf="mostrar" class="ratio ratio-16x9">
+                    <h3 class="text-center">video1</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jdAYTkLOiMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
                   <div *ngIf="mostrar2" class="ratio ratio-16x9">
                     <h3 class="text-center">video2</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AR1tLGQ7COs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2psxuqT3XHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                   <div *ngIf="mostrar3" class="ratio ratio-16x9">
                     <h3 class="text-center">video3</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/92hEQTLhzro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mEe_NqTq6kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
+                  
+                 
         </div>
 </div>
         
-        <div class="row justify-content-center offset-lg-4  mt-3">
+        
           
-          <div class="col">
-            <div class="btn-group" role="group" aria-label="Basic radio toggle button group mr-3">
-              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-              <label class="btn btn-outline-light" for="btnradio1" (click)="onVer()">Capitulo 1</label>
-            
-              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-              <label class="btn btn-outline-light" for="btnradio2" (click)="onVer2()">Capitulo 2</label>
-            
-              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-              <label class="btn btn-outline-light" for="btnradio3" (click)="onVer3()">Capitulo 3</label>
-            </div>
+          
+    
+       
+       <div class="row justify-content-center offset-lg-5  mt-3">
+        <div class="col-12">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group mr-3">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-light" for="btnradio1" (click)="intro()">Intro</label>
+            <br>            
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-light" for="btnradio2" (click)="onVer()">Capitulo 1</label>
+            <br>            
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-light" for="btnradio3" (click)="onVer2()">Capitulo 2</label>
+            <br>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+            <label class="btn btn-outline-light" for="btnradio7" (click)="onVer3()">Capitulo 3</label>
+            <br>                                     
+                                      
           </div>
-       </div>             
-
+          
+        </div>
+     
+          
+        </div> 
+        <!-- nivel2 -->
+        <div class="d-grid gap-2 mt-3">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            nivel 2
+          </button>
+        </div>
         
-                 
         
+        <div class="collapse" id="collapseExample"> 
+          
+<div class="row  text-center">
+  <div class=" col-sm-12  align-self-center">          
+          
+          
+            <div *ngIf="mostrar4" class="ratio ratio-16x9">
+              <h3 class="text-center">video4</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/oosqhY6GZ0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div *ngIf="mostrar5" class="ratio ratio-16x9">
+              <h3 class="text-center">video5</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cB3iVCX9v88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div *ngIf="mostrar6" class="ratio ratio-16x9">
+              <h3 class="text-center">video6</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/hsmFH7vxEdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+  </div>
+</div>  
+</div>       
 
-<hr style="color: aquamarine;">
-<h3 class="text-center" style="color: aquamarine;">Introdución</h3>
-         <br>
-         <p style="color: aquamarine;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum deleniti adipisci culpa aspernatur, dignissimos illum, molestias ipsum reprehenderit ab quasi a fuga sint voluptatibus iure quo velit neque natus.
-         </p>
+            <!-- fin de videos         -->
+
+          <div class="row justify-content-center offset-lg-5  mt-3">
+            
+         
+              <div class="col-12 mt-3">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group mr-3"> 
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-light" for="btnradio4" (click)="onVer4()">Capitulo 4</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                <label class="btn btn-outline-light" for="btnradio5" (click)="onVer5()">Capitulo 5</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                <label class="btn btn-outline-light" for="btnradio6" (click)="onVer6()">Capitulo 6</label>  
+              </div>
+              </div>
+              
+            </div>       
+        </div>
+        <!-- nivel2 -->
+        
+        <!-- contenido -->
+        <div class="d-grid gap-2 mt-3">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Contenido
+          </button>
+        </div>
+        
+        <div class="collapse" id="collapseExample">
+          
+            <div class="ratio ratio-16x9">                        
+              <iframe src="../../../assets/pdf/presentacion y pdf y enlaces de el curso de la introduccion a las tics/Curso de introduccion a las Tic Ing Hugo Colindres.pdf" frameborder="0">
+              </iframe>
+             </div>  
+           </div>
+           <div class="d-grid gap-2 mt-3">
+            <button class="btn  btn-outline-info border">
+              <h5><a class="text-center " href="../../../assets/pdf/presentacion y pdf y enlaces de el curso de la introduccion a las tics/Curso de introduccion a las Tic Ing Hugo Colindres.pdf" download="Evaluacion">Descargar Evaluacion</a></h5>
+             </button>
+           </div>
+           
+           
+        <!-- contenido -->
+       
          
          
        

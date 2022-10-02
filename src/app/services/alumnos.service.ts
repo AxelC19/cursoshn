@@ -12,10 +12,37 @@ export class AlumnosService {
 
   constructor( private fire:Firestore ) { }
 
-  apregarAlumnos (Alumnos:any):Promise<any>{
+//instructor inixio
+apreglinstructor (Alumnos:any):Promise<any>{
+  const alumnosA= collection(this.fire,'instructortabla');
+  return addDoc(alumnosA,Alumnos);
+}
+mostrarinstructor():Observable<any[]>{
+  const alumnosA= collection(this.fire,'instructortabla');
+  return collectionData(alumnosA,{idField:'id'}) as Observable<any[]>;
+} 
+
+deleteinstructor(Alumnos:any){
+  const alumnosA= doc(this.fire,`instructortabla/${Alumnos.id}`);
+  return deleteDoc(alumnosA);
+
+}
+
+editarinstructor (Alumnos:any):Promise<any>{
+  const alumnosA= doc(this.fire,`instructortabla/${Alumnos.id}`);
+  return updateDoc(alumnosA,Alumnos);
+}
+
+//instructor fin
+ apregarAlumnos (Alumnos:any):Promise<any>{
     const alumnosA= collection(this.fire,'AlumnosCurso1');
     return addDoc(alumnosA,Alumnos);
   }
+  //cursosName
+  CursosName():Observable<any[]>{
+    const alumnosA= collection(this.fire,'CursosName');
+    return collectionData(alumnosA,{idField:'id'}) as Observable<any[]>;
+  } 
 
   // getAlumnos():Observable<any[]>{
   //   const alumnosA= collection(this.fire,'Alumnos');
@@ -33,7 +60,7 @@ export class AlumnosService {
   }
   
 
-  editarAlumnos (Alumnos:any):Promise<any>{
+ editarAlumnos (Alumnos:any):Promise<any>{
     const alumnosA= doc(this.fire,`AlumnosCurso1/${Alumnos.id}`);
     return updateDoc(alumnosA,Alumnos);
   }
@@ -46,6 +73,16 @@ curso1AluAgregar (Alumnos:any):Promise<any>{
   const alumnosA= collection(this.fire,'curso1Alu');
   return addDoc(alumnosA,Alumnos);
 }
+
+curso1delete(Alumnos:any){
+  const alumnosA= doc(this.fire,`curso1Alu/${Alumnos.id}`);
+  return deleteDoc(alumnosA);
+
+}
+editarcurso1 (Alumnos:any):Promise<any>{
+  const alumnosA= doc(this.fire,`curso1Alu/${Alumnos.id}`);
+  return updateDoc(alumnosA,Alumnos);
+}
 //curso get fin
 
 //cursos get inicio
@@ -57,6 +94,16 @@ curso2AluAgregar (Alumnos:any):Promise<any>{
   const alumnosA= collection(this.fire,'curso2Alu');
   return addDoc(alumnosA,Alumnos);
 }
+
+curso2delete(Alumnos:any){
+  const alumnosA= doc(this.fire,`curso2Alu/${Alumnos.id}`);
+  return deleteDoc(alumnosA);
+
+}
+editarcurso2 (Alumnos:any):Promise<any>{
+  const alumnosA= doc(this.fire,`curso2Alu/${Alumnos.id}`);
+  return updateDoc(alumnosA,Alumnos);
+}
 //curso get fin
 
 //cursos get inicio
@@ -67,6 +114,16 @@ curo3Alu():Observable<any[]>{
 curso3AluAgregar (Alumnos:any):Promise<any>{
   const alumnosA= collection(this.fire,'curso3Alu');
   return addDoc(alumnosA,Alumnos);
+}
+
+curso3delete(Alumnos:any){
+  const alumnosA= doc(this.fire,`curso3Alu/${Alumnos.id}`);
+  return deleteDoc(alumnosA);
+
+}
+editarcurso3 (Alumnos:any):Promise<any>{
+  const alumnosA= doc(this.fire,`curso3Alu/${Alumnos.id}`);
+  return updateDoc(alumnosA,Alumnos);
 } 
 //curso get fin
 
@@ -78,6 +135,16 @@ curo4Alu():Observable<any[]>{
 curso4AluAgregar (Alumnos:any):Promise<any>{
   const alumnosA= collection(this.fire,'curso4Alu');
   return addDoc(alumnosA,Alumnos);
+}
+
+curso4delete(Alumnos:any){
+  const alumnosA= doc(this.fire,`curso4Alu/${Alumnos.id}`);
+  return deleteDoc(alumnosA);
+
+}
+editarcurso4 (Alumnos:any):Promise<any>{
+  const alumnosA= doc(this.fire,`curso4Alu/${Alumnos.id}`);
+  return updateDoc(alumnosA,Alumnos);
 } 
 //curso get fin
 
@@ -89,6 +156,15 @@ curo5Alu():Observable<any[]>{
 curso5AluAgregar (Alumnos:any):Promise<any>{
   const alumnosA= collection(this.fire,'curso5Alu');
   return addDoc(alumnosA,Alumnos);
+}
+curso5delete(Alumnos:any){
+  const alumnosA= doc(this.fire,`curso5Alu/${Alumnos.id}`);
+  return deleteDoc(alumnosA);
+
+}
+editar5curso (Alumnos:any):Promise<any>{
+  const alumnosA= doc(this.fire,`curso5Alu/${Alumnos.id}`);
+  return updateDoc(alumnosA,Alumnos);
 } 
 //curso get fin
 
@@ -101,6 +177,15 @@ curso6AluAgregar (Alumnos:any):Promise<any>{
   const alumnosA= collection(this.fire,'curso6Alu');
   return addDoc(alumnosA,Alumnos);
 } 
+curso6delete(Alumnos:any){
+  const alumnosA= doc(this.fire,`curso6Alu/${Alumnos.id}`);
+  return deleteDoc(alumnosA);
+
+}
+editarcurso6 (Alumnos:any):Promise<any>{
+  const alumnosA= doc(this.fire,`curso6Alu/${Alumnos.id}`);
+  return updateDoc(alumnosA,Alumnos);
+}
 //curso get fin
 
 //cursos get inicio
@@ -111,6 +196,15 @@ curo7Alu():Observable<any[]>{
 curso7AluAgregar (Alumnos:any):Promise<any>{
   const alumnosA= collection(this.fire,'curso7Alu');
   return addDoc(alumnosA,Alumnos);
+}
+curso7delete(Alumnos:any){
+  const alumnosA= doc(this.fire,`curso7Alu/${Alumnos.id}`);
+  return deleteDoc(alumnosA);
+
+}
+editar7curso (Alumnos:any):Promise<any>{
+  const alumnosA= doc(this.fire,`curso7Alu/${Alumnos.id}`);
+  return updateDoc(alumnosA,Alumnos);
 }
 //curso get fin
 

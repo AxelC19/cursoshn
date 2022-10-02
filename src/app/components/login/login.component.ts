@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
       
     })  
   }
+  
   onSubmit(){
     this.autenticarService.login(this.formLogin.value) //promesa
       /*/funciona bien*/ 
@@ -30,11 +31,43 @@ export class LoginComponent implements OnInit {
       
     })
        //errores
-    .catch(erro=>{console.log(erro)
-      alert('Usuario no encontrado')
+    .catch(erro=>{
+      console.log(erro);
+      
+      alert(this.FirebaseError(erro.code))
+      
+
   }); 
-    
+}
+
+FirebaseError(code:string){
+  switch (code) {
+    case 'auth/wrong-password':
+         return 'contraseña invalida';
+      
+    case 'auth/weak-password':
+    return 'contraseña debil';        
+      
+    case 'auth/invalid-email':
+       return 'correo Invalido @.com'  
+    case 'auth/invalid-email':
+        return 'Cuenta invalida'
+    case 'auth/user-disabled':
+          return 'Cuenta Inhabilitada'        
+      default:
+      return 'error usario no encontrado'   ;
+      
   }
+
+}
+google(){
+  this.autenticarService.googleInicio().then(r=>{
+    console.log(r);
+    this.router.navigate(['/main']);
+    alert('iniciar con google') 
+  }).catch(err=> console.log(err) )
+  
+}
   recuperarContrasena(){
     this.router.navigate(['/recuperarContrasena']);
   }
@@ -44,5 +77,5 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }

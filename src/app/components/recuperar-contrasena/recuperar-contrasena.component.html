@@ -4,26 +4,17 @@
 <h2 class="text-center mt-3 text-info">Recuperar Contraseña</h2>
 <hr>
 <div class="row justify-content-center mt-3 text-info ">
-    <div class="col-7">        
-        <form  autocomplete="off">
-          <span  class="badge bg-danger mt-2">todos los campos son requeridos</span>
+    <div class="col-9 mt-3">        
+        <form  autocomplete="off" [formGroup]="RecuperarUsuario" (ngSubmit)="recuperar()">          
             <div class="form-floating  mb-3">
-                <input type="email" class="form-control" formControlName="email" placeholder="name@gmail.com">
-                <label for="floatingInput">Correo electronico</label>
+                <input type="email" class="form-control"  formControlName="email" placeholder="name@gmail.com">
+                <label for="floatingInput">Correo electronico de Recuperación</label>
               </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" formControlName="Nueva Contraseña" placeholder="Contraseña">
-                <label for="floatingPassword"> Nueva Contraseña</label>
-              </div>
-              <br>
-              <div class="form-floating">
-                <input type="password" class="form-control" formControlName="Repetir Contraseña" placeholder="Contraseña">
-                <label for="floatingPassword">Repetir Contraseña</label>
-              </div>
-              <br>
+              
           
                 <div class="d-grid gap-2">
-                    <button type="sumbit" class="btn btn-primary" (click)="regrsarLogin()">Actualizar</button>                    
+                  <button  type="sumbit" class="btn btn-primary" >Actualizar</button>                    
+                    <button  class="btn btn-primary" (click)="regrsarLogin()">Volver</button>                    
                 </div>
                 <br>
                 

@@ -1,3 +1,30 @@
-<p class="text-center mt-4" style="text-decoration:underline ; text-transform: uppercase; color:aquamarine;">administracion works!</p>
+<p class="text-center mt-4" style="text-decoration:underline ; text-transform: uppercase; color:aquamarine;">Administración</p>
 
-<app-lista-alumnos></app-lista-alumnos>
+<br>
+<br>
+<div class="row  mt-4 justify-content-center" >
+    <div class="col-sm  ">
+        <div class="card"  >
+            <img (click)="onIntruCrud()" src="../../../assets/icoMaestros.png" class=" rounded" style="height:29rem ;" alt="..."  >
+            <div class="card-body text-center">
+                <h2 (click)="onIntruCrud()" class="card-title">Alumno Instructor</h2>
+            </div>
+            
+          </div>
+    </div>
+     
+    <div class="col-sm  ">
+        <div class="card" >
+            <img (click)="onALuCrud()" src="../../../assets/icoAlumno.png" class=" rounded" style="height:29rem ;" alt="..." >
+            <div class="card-body text-center">
+              <h2 class="card-title" (click)="onALuCrud()">Alumno Administra</h2>
+            </div>
+          </div>
+    </div>
+    
+</div>
+<br>
+<br>
+
+
+<!-- <app-lista-alumnos></app-lista-alumnos> -->

@@ -18,11 +18,12 @@
               <br>
           
                 <div class="d-grid gap-2">
-                    <button type="sumbit" class="btn btn-primary">iniciar</button>
+                    <button type="sumbit" class="btn btn-primary" [disabled]="formLogin.invalid">iniciar</button>
+                    <button type="sumbit" class="btn btn-danger" (click)="google()">Empezar con Google</button>
                     <button type="submit" class="btn btn-primary" (click)="registro()"> registrar </button>   
                 </div>
                 <br>
-                <a class="text-center mt-4" (click)="recuperarContrasena()"><h6>recuperar Contraseña</h6></a>
+                <a class="text-center mt-4" (click)="recuperarContrasena()"><h6 style="cursor:pointer ;">recuperar Contraseña</h6></a>
         </form>
 
     </div>

@@ -59,9 +59,9 @@ export class MatricularAlu4Component implements OnInit {
     const Alumnos: any={
         
         nombre: this.crearAl.value.nombre,
-        Segundonombre: this.crearAl.value.segundonombre,
+        segundonombre: this.crearAl.value.segundonombre,
         apellido: this.crearAl.value.apellido,
-        Segundoapellido: this.crearAl.value.segundoapellido,
+        segundoapellido: this.crearAl.value.segundoapellido,
         identidad: this.crearAl.value.identidad,        
         edad: this.crearAl.value.edad,
         sexo: this.crearAl.value.sexo,

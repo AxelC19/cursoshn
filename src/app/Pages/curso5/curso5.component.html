@@ -5,9 +5,9 @@
 <div class="row  justify-content-end mt-3" >
   <div class=" col-sm col-5 offset-lg-9">
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<!-- <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   matricular 
-</button>
+</button> -->
 
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -28,4 +28,175 @@
     
 </div>
 <!-- modal fin -->
+<br>
+<br>
+<br>
+
+<div class="row  justify-content-end mt-3" >
+  <div class=" col-sm col-5 offset-lg-9">
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  matricular 
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-MatricularAlu></app-MatricularAlu>
+      </div>
+      
+    </div>
+  </div>
+</div>
+  </div>
+    
+</div>
+<!-- modal fin -->
+
+<br>
+<h4 class="text-right mt-3 text-info">  Word Basico  <span> </span><span class="vr text-info" style="padding-left: 3px ;"> </span> <span class="text-muted"> Ing. Alex Lagos</span></h4>
+<hr style="color: aquamarine;">
+
+<h3 class="text-center" style="color: aquamarine;">Introdución</h3>
+         <br>
+         <p style="color: aquamarine;">
+          El objetivo de este curso básico de Word es que los participantes adquieran todos los conocimientos para crear, editar, dar formato, editar documentos, insertar objetos e imprimir dichos documentos, así como el manejo de herramientas intermedias de control y secciones en Word. La aplicación Microsoft Word es el procesador de textos de uso más extendido, siendo el tratamiento de textos una de las aplicaciones más usuales de los equipos informáticos, tanto en el ámbito profesional como personal.
+         </p>
+         
+       
+<br>
+<hr>
+<div class="row  text-center">
+        <div class=" col-sm-12  align-self-center">          
+                
+                <div *ngIf="intros" class="ratio ratio-16x9">
+                    <h3 class="text-center">intro</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dvO_cELmh7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>                  
+                  <div *ngIf="mostrar" class="ratio ratio-16x9">
+                    <h3 class="text-center">video1</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qiiCBiiTi-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div *ngIf="mostrar2" class="ratio ratio-16x9">
+                    <h3 class="text-center">video2</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oi9woh5hQz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div *ngIf="mostrar3" class="ratio ratio-16x9">
+                    <h3 class="text-center">video3</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2YjzVzEdhrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  
+                 
+        </div>
+</div>
+        
+        
+          
+          
+    
+       
+       <div class="row justify-content-center offset-lg-5  mt-3">
+        <div class="col-12">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group mr-3">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-light" for="btnradio1" (click)="intro()">Intro</label>
+            <br>            
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-light" for="btnradio2" (click)="onVer()">Capitulo 1</label>
+            <br>            
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-light" for="btnradio3" (click)="onVer2()">Capitulo 2</label>
+            <br>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+            <label class="btn btn-outline-light" for="btnradio7" (click)="onVer3()">Capitulo 3</label>
+            <br>                                     
+                                      
+          </div>
+          
+        </div>
+     
+          
+        </div> 
+        <!-- nivel2 -->
+        <div class="d-grid gap-2 mt-3">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            nivel 2
+          </button>
+        </div>
+        
+        
+        <div class="collapse" id="collapseExample"> 
+          
+<div class="row  text-center">
+  <div class=" col-sm-12  align-self-center">          
+          
+          
+            <div *ngIf="mostrar4" class="ratio ratio-16x9">
+              <h3 class="text-center">video4</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/hePGsNMAISM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div *ngIf="mostrar5" class="ratio ratio-16x9">
+              <h3 class="text-center">video5</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/yFUaoEoXw84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div *ngIf="mostrar6" class="ratio ratio-16x9">
+              <h3 class="text-center">video6</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/lJ8V_8cE-PA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+  </div>
+</div>  
+</div>       
+
+            <!-- fin de videos         -->
+
+          <div class="row justify-content-center offset-lg-5  mt-3">
+            
+         
+              <div class="col-12 mt-3">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group mr-3"> 
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-light" for="btnradio4" (click)="onVer4()">Capitulo 4</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                <label class="btn btn-outline-light" for="btnradio5" (click)="onVer5()">Capitulo 5</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                <label class="btn btn-outline-light" for="btnradio6" (click)="onVer6()">Capitulo 6</label>  
+              </div>
+              </div>
+              
+            </div>       
+        </div>
+        <!-- nivel2 -->
+        
+        <!-- contenido -->
+        <div class="d-grid gap-2 mt-3">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Contenido
+          </button>
+        </div>
+        
+        <div class="collapse" id="collapseExample">
+          
+            <div class="ratio ratio-16x9">                        
+              <iframe src="../../../assets/pdf/wordalex/Curso de Word Básico/Manual de Microsoft Word.pdf" frameborder="0">
+              </iframe>
+             </div>  
+           </div>
+           <div class="d-grid gap-2 mt-3">
+            <button class="btn  btn-outline-info border">
+              <h5><a class="text-center " href="../../../assets/pdf/wordalex/Curso de Word Básico/Formulario.txt" download="Evaluacion">Descargar Evaluacion</a></h5>
+             </button>
+           </div>
+           
+           
+        <!-- contenido -->
+       
+         
+         
+       
 
