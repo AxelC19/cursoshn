@@ -7,3 +7,9 @@
     
 
 }
+
+.animate__fadeIn {
+    --animate-duration: 5s;
+  }
+  
+ 
