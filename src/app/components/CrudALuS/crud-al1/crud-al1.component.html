@@ -31,7 +31,7 @@
          <button class="btn btn-dark btn-lg float-end" style="text-transform: uppercase;" (click)="onAluAgregar()">Agregar</button>
           <h3 *ngIf="campos.length == 0" class="text-center  mt-3" style="color:brown;">No hay Datos</h3>
          <hr class="mt-4">
-         <table *ngIf="campos.length > 0" class="table table-info table-striped mt-4 text-center">
+         <table id="htmlData" *ngIf="campos.length > 0" class="table table-info table-striped mt-4 text-center">
             <thead>
               <tr>
                 <th>#</th>
@@ -68,13 +68,17 @@
                   <i class="fa-solid fa-trash fa-lg text-danger" (click)="onEliminarAlumnos(campo)" ></i>                 
                 </td>
                                 
-              </tr>
-              
+              </tr>              
+             
             </tbody>
           </table>
+          <div>
+            <button (click)="downloadPDF()" class="btn-info btn mt-3 btn-lg ml-4  btn-block col col-lg-5">descargar pdf</button>
+          </div>
      </div>
   </div>
 </div>
+
 <!--modal-->}
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
